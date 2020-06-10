@@ -68,14 +68,11 @@ li {
   justify-content: space-between;
   align-items: center;
 
-  .menu {
-    display: flex;
-    justify-content: space-between;
-
-    li {
-      list-style: none;
-      display: inline;
-    }
+  li {
+    list-style: none;
+    display: inline;
+    padding-right: 35px;
+    color: $menucolor;
   }
 }
 
