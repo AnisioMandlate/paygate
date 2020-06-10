@@ -1,0 +1,190 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: $maincolor;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.contact-wrapper {
+  width: 100%;
+  border-bottom: 1px solid $border;
+
+  .contact-header {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .contact-phone {
+      display: flex;
+      align-items: center;
+
+      i {
+        margin-right: 10px;
+        color: $border;
+      }
+
+      p {
+        margin-right: 20px;
+      }
+
+      a {
+        color: $linkcolor;
+      }
+    }
+
+    .devbutton,
+    .clientbutton {
+      padding: 8px 15px;
+      border: none;
+      border-radius: 5px;
+      color: $text;
+    }
+
+    .devbutton {
+      background-color: $devbutton;
+      margin-right: 20px;
+    }
+
+    .clientbutton {
+      background-color: $clientbutton;
+    }
+  }
+}
+
+.site-header {
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+
+    li {
+      list-style: none;
+      display: inline;
+    }
+  }
+}
+
+.content {
+  width: 80%;
+  margin: 30px auto;
+
+  .main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .text-wrapper {
+      h2 {
+        font-size: 42px;
+        color: $maincolor;
+        text-transform: uppercase;
+        font-weight: bolder;
+        // margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 20px;
+        line-height: 9px;
+        font-weight: 600;
+      }
+
+      span {
+        color: $spancolor;
+      }
+    }
+
+    .button-wrapper {
+      margin-top: 40px;
+      .chat-button {
+        text-transform: uppercase;
+        font-weight: normal;
+        width: 180px;
+        min-height: 40px;
+        padding: 6px 35px;
+        border-radius: 10px;
+        border-width: 4px;
+        border-color: rgb(0, 47, 103);
+        border-style: solid;
+        color: rgb(0, 47, 103);
+        font-size: 18px;
+      }
+    }
+  }
+
+  .payments {
+    width: 100%;
+    margin: 20px auto;
+    padding: 35px 15px 0;
+
+    .payment-header {
+      text-align: center;
+
+      img {
+        width: 378px;
+        height: 58px;
+      }
+
+      h3 {
+        font-size: 36px;
+        line-height: 0;
+        font-weight: normal;
+      }
+
+      span {
+        color: $spancolor;
+      }
+    }
+
+    .payment-cards {
+      margin-top: 100px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 35px;
+
+      .card {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        box-shadow: rgb(188, 188, 188) 1px 1px 5px 2px;
+        padding-top: 20px;
+        min-height: 350px;
+        transition: all 700ms ease 0s;
+        margin: 0px;
+        background-color: rgba(0, 0, 0, 0);
+        border-color: transparent;
+        text-align: center;
+
+        img {
+          width: 140px;
+          height: 140px;
+          border-radius: 50%;
+        }
+
+        .card-title {
+          font-size: 21px;
+          text-transform: uppercase;
+          color: $basecolor;
+        }
+
+        p {
+          color: $basecolor;
+          font-size: 19px;
+          //   font-weight: 600;
+        }
+      }
+    }
+  }
+}
