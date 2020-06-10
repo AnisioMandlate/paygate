@@ -14,7 +14,7 @@ a {
   border-bottom: 1px solid $border;
 
   .contact-header {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -118,6 +118,13 @@ a {
         border-style: solid;
         color: rgb(0, 47, 103);
         font-size: 18px;
+        transition: all 0.5s;
+      }
+
+      .chat-button:hover {
+        background: $spancolor;
+        border-color: $spancolor;
+        color: $text;
       }
     }
   }
@@ -160,7 +167,8 @@ a {
         justify-content: start;
         box-shadow: rgb(188, 188, 188) 1px 1px 5px 2px;
         padding-top: 20px;
-        min-height: 350px;
+        min-height: 250px;
+        min-width: 300px;
         transition: all 700ms ease 0s;
         margin: 0px;
         background-color: rgba(0, 0, 0, 0);
@@ -182,8 +190,306 @@ a {
         p {
           color: $basecolor;
           font-size: 19px;
-          //   font-weight: 600;
+          font-weight: 600;
         }
+      }
+    }
+  }
+
+  .transaction {
+    background: rgb(241, 245, 248);
+    margin: 40px auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .text {
+      text-transform: uppercase;
+      padding: 35px 15px 0;
+      margin-bottom: 26px;
+
+      h6 {
+        margin-top: 15px;
+        margin-bottom: 14px;
+        font-size: 20px;
+        font-weight: bolder;
+      }
+
+      h5 {
+        margin-top: 18px;
+        font-size: 19px;
+      }
+    }
+
+    .transactions-buttons {
+      text-transform: uppercase;
+      padding: 35px 15px 0;
+      display: flex;
+      flex-direction: column;
+      padding: 8px 35px;
+
+      #pricing {
+        text-transform: uppercase;
+        margin-bottom: 26px;
+        color: $text;
+        background: $maincolor;
+        border: 4px solid $maincolor;
+        padding: 8px 25px;
+        width: 280px;
+        display: inline-block;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 18px;
+        box-shadow: 2px 2px 2px 2px #bcbcbc;
+        cursor: pointer;
+        transition: all 0.5s;
+      }
+      #pricing:hover {
+        background: $text;
+        color: $maincolor;
+      }
+
+      #sign {
+        text-transform: uppercase;
+        margin-bottom: 26px;
+        color: $maincolor;
+        background: $text;
+        border: 4px solid $maincolor;
+        padding: 8px 25px;
+        width: 280px;
+        display: inline-block;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 18px;
+        box-shadow: 2px 2px 2px 2px #bcbcbc;
+        cursor: pointer;
+        transition: all 0.5s;
+      }
+      #sign:hover {
+        background: $maincolor;
+        color: $text;
+      }
+    }
+  }
+}
+
+.grow {
+  background: -webkit-linear-gradient(
+    left,
+    rgb(0, 46, 103) 0%,
+    rgb(88, 184, 222) 100%
+  );
+  width: 100%;
+  margin: 70px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35vh;
+
+  h2 {
+    font-weight: normal;
+    color: $text;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    font-size: 60px;
+    font-weight: 500;
+  }
+}
+
+.last-content {
+  width: 80%;
+  margin: 30px auto;
+
+  .trusters {
+    text-align: center;
+    margin-bottom: 1.42em;
+
+    h3 {
+      text-transform: uppercase;
+      font-size: 36px;
+      margin-bottom: 0;
+
+      span {
+        color: $secondaryTextColor;
+      }
+
+      strong {
+        color: $maincolor;
+      }
+    }
+
+    p {
+      font-size: 19px;
+      margin-top: 6px;
+      font-weight: 600;
+    }
+  }
+
+  .trusters-img {
+    box-shadow: rgb(181, 181, 181) 2.99743px 2.99743px 6.99743px 4.99615px;
+    border-style: none;
+    border-radius: 5px;
+    min-height: 200px;
+    transition: all 700ms ease 0s;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 90%;
+    }
+  }
+
+  .security {
+    text-align: center;
+    margin-top: 3.42em;
+    margin-bottom: 1.42em;
+
+    h3 {
+      text-transform: uppercase;
+      font-size: 36px;
+      margin-bottom: 0;
+
+      span {
+        color: $secondaryTextColor;
+      }
+
+      strong {
+        color: $maincolor;
+      }
+    }
+
+    p {
+      font-size: 19px;
+      margin-top: 6px;
+      font-weight: 600;
+    }
+  }
+
+  .security-cards {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+
+    .security-card {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      background-color: rgb(241, 245, 248);
+      box-shadow: rgb(188, 188, 188) 1px 1px 5px 2px;
+      padding-top: 20px;
+      min-height: 200px;
+      min-width: 300px;
+      transition: all 700ms ease 0s;
+      margin: 0px;
+      background-color: rgba(0, 0, 0, 0);
+      border-color: transparent;
+      text-align: center;
+      cursor: pointer;
+
+      img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+      }
+
+      .card-title {
+        font-size: 21px;
+        text-transform: uppercase;
+        color: $basecolor;
+      }
+    }
+
+    .security-card:hover {
+      box-shadow: rgb(181, 181, 181) 3px 3px 7px 5px;
+    }
+  }
+
+  .best-pratice {
+    margin-top: 70px;
+
+    .global {
+      text-align: center;
+      margin-top: 3.42em;
+      margin-bottom: 1.42em;
+
+      h3 {
+        text-transform: uppercase;
+        font-size: 36px;
+        margin-bottom: 0;
+
+        span {
+          color: $secondaryTextColor;
+        }
+
+        strong {
+          color: $maincolor;
+        }
+      }
+
+      p {
+        font-size: 24px;
+        margin-top: 6px;
+        font-weight: 600;
+      }
+    }
+
+    .dpo-group {
+      text-align: center;
+      font-size: 17px;
+      color: $basecolor;
+      line-height: 21px;
+      font-weight: 600;
+    }
+  }
+
+  .pro {
+    background: rgb(241, 245, 248);
+    margin: 40px auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .text {
+      text-transform: uppercase;
+      padding: 5px 22px 0;
+      color: $maincolor;
+      font-size: 36px;
+      font-weight: bolder;
+    }
+
+    .pro-buttons {
+      text-transform: uppercase;
+      padding: 55px 22px 0;
+      display: flex;
+      padding: 8px 35px;
+
+      #sign-up {
+        text-transform: uppercase;
+        margin-bottom: 26px;
+        color: $maincolor;
+        background: $text;
+        border: 4px solid $maincolor;
+        padding: 8px 25px;
+        width: 280px;
+        display: inline-block;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 18px;
+        box-shadow: 2px 2px 2px 2px #bcbcbc;
+        cursor: pointer;
+        transition: all 0.5s;
+      }
+
+      #sign-up:hover {
+        background: $maincolor;
+        color: $text;
       }
     }
   }
