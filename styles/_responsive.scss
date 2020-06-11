@@ -1,3 +1,27 @@
+@media (min-width: 300px) and (max-width: 458px) {
+  .img-wrapper {
+    top: -511px !important;
+  }
+}
+
+@media (min-width: 458px) and (max-width: 467px) {
+  .img-wrapper {
+    top: -456px !important;
+  }
+}
+
+@media (min-width: 467px) and (max-width: 500px) {
+  .img-wrapper {
+    top: -421px !important;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 750px) {
+  .img-wrapper {
+    top: -404px !important;
+  }
+}
+
 @media (max-width: 750px) {
   .contact-header {
     flex-direction: column;
@@ -6,6 +30,10 @@
     .contact-phone {
       display: none !important;
     }
+  }
+
+  .menu {
+    display: none;
   }
 
   .main-content {
@@ -24,7 +52,18 @@
     .img-wrapper {
       padding: 26px;
       position: relative;
-      top: -390px;
+      top: -490px;
+    }
+  }
+
+  .payment-header {
+    img {
+      width: 306px !important;
+      height: 58px;
+    }
+
+    h3 {
+      font-size: 27px !important;
     }
   }
 
