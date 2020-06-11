@@ -12,7 +12,7 @@
         <div class="contact-header">
             <div class="contact-phone">
                 <i class="fas fa-phone-alt"></i><p>+27 (0)87 820 2020</p>
-                <i class="fas fa-envelope"></i><a href="">infosa@dpogroup.com</a>
+                <i class="fas fa-envelope"></i><a class="infolink" href="">infosa@dpogroup.com</a>
             </div>
             <div>
                 <a href="#"><button class="devbutton">Developer Login</button></a>
@@ -21,17 +21,20 @@
         </div>
     </div>
     <header class="site-header">
+        <div class="menu-btn">
+            <span class="menu-btn__burger"></span>
+        </div>
         <div class="logo">
             <img src="./img/DPO-South-Africa-LogoStd.png" alt="" srcset="">
         </div>
-        <div class="menu">
-            <ul>
-                <a href="#"><li>Solution</li></a>
-                <a href="#"><li>Developers</li></a>
-                <a href="#"><li>Company</li></a>
-                <a href="#"><li>Get Started</li></a>
+        <nav class="menu">
+            <ul class="menu-nav">
+                <li class="menu-nav__item"><a class="menu-nav__link" href="#">Solution</a></li>
+                <li class="menu-nav__item"><a class="menu-nav__link" href="#">Developers</a></li>
+                <li class="menu-nav__item"><a class="menu-nav__link" href="#">Company</a></li>
+                <li class="menu-nav__item"><a class="menu-nav__link" href="#">Get Started</a></li>
             </ul>
-        </div>
+        </nav>
     </header>
     <div class="content">
         <div class="main-content">
@@ -235,5 +238,6 @@
             <p>2020 © Copyright PayGate (Pty) Ltd</p>
         </div>
     </footer>
+    <script src="./public/js/index.js"></script>
 </body>
 </html>

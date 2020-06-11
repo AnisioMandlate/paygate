@@ -37,7 +37,7 @@ li {
         margin-right: 20px;
       }
 
-      a {
+      .infolink {
         color: $linkcolor;
       }
     }
@@ -68,11 +68,14 @@ li {
   justify-content: space-between;
   align-items: center;
 
-  li {
+  .menu-nav__item {
     list-style: none;
     display: inline;
     padding-right: 35px;
-    color: $menucolor;
+
+    .menu-nav__link {
+      color: $clientbutton;
+    }
   }
 }
 
@@ -127,6 +130,10 @@ li {
         border-color: $spancolor;
         color: $text;
       }
+    }
+
+    &.open {
+      z-index: -999;
     }
   }
 

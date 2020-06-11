@@ -1,44 +1,47 @@
-@media (min-width: 300px) and (max-width: 458px) {
-  .content {
-    margin: 30px !important;
+// @media (min-width: 300px) and (max-width: 458px) {
+//   .content {
+//     margin: 30px !important;
 
-    .img-wrapper {
-      top: -404px !important;
-    }
-  }
-}
+//     .img-wrapper {
+//       top: -404px !important;
+//     }
+//   }
+// }
 
-@media (min-width: 458px) and (max-width: 467px) {
-  .content {
-    margin: 30px !important;
+// @media (min-width: 458px) and (max-width: 467px) {
+//   .content {
+//     margin: 30px !important;
 
-    .img-wrapper {
-      top: -404px !important;
-    }
-  }
-}
+//     .img-wrapper {
+//       top: -404px !important;
+//     }
+//   }
+// }
 
-@media (min-width: 467px) and (max-width: 500px) {
-  .content {
-    margin: 30px !important;
+// @media (min-width: 467px) and (max-width: 500px) {
+//   .content {
+//     margin: 30px !important;
 
-    .img-wrapper {
-      top: -404px !important;
-    }
-  }
-}
+//     .img-wrapper {
+//       top: -404px !important;
+//     }
+//   }
+// }
 
-@media (min-width: 500px) and (max-width: 750px) {
-  .content {
-    margin: 30px !important;
+// @media (min-width: 500px) and (max-width: 750px) {
+//   .content {
+//     margin: 30px !important;
 
-    .img-wrapper {
-      top: -404px !important;
-    }
-  }
-}
+//     .img-wrapper {
+//       top: -404px !important;
+//     }
+//   }
+// }
 
 @media (max-width: 750px) {
+  .content {
+    margin: 30px !important;
+  }
   .contact-header {
     flex-direction: column;
     padding: 10px;
@@ -48,8 +51,8 @@
     }
   }
 
-  .menu {
-    display: none;
+  .menu-btn {
+    visibility: visible;
   }
 
   .main-content {
@@ -58,17 +61,6 @@
     p {
       line-height: normal !important;
       margin: 5px 0;
-    }
-
-    .wrapper {
-      position: relative;
-      top: 312px;
-    }
-
-    .img-wrapper {
-      padding: 26px;
-      position: relative;
-      top: -490px;
     }
   }
 
@@ -79,7 +71,7 @@
     }
 
     h3 {
-      font-size: 27px !important;
+      font-size: 25px !important;
     }
   }
 
@@ -127,6 +119,18 @@
     .fab {
       padding: 23px 14px 0 !important;
     }
+  }
+}
+
+@media (min-width: 900px) {
+  .menu-btn {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 900px) {
+  .menu {
+    visibility: hidden;
   }
 }
 
