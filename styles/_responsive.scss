@@ -1,0 +1,75 @@
+@media (max-width: 650px) {
+  .contact-header {
+    flex-direction: column;
+    padding: 10px;
+
+    .contact-phone {
+      display: none !important;
+    }
+  }
+
+  .main-content {
+    flex-direction: column;
+
+    p {
+      line-height: normal !important;
+      margin: 5px 0;
+    }
+
+    .wrapper {
+      position: relative;
+      top: 312px;
+    }
+
+    .img-wrapper {
+      padding: 26px;
+      position: relative;
+      top: -390px;
+    }
+  }
+
+  .payment-cards {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+
+  .transaction {
+    flex-direction: column;
+    text-align: center;
+
+    h5 {
+      display: none;
+    }
+  }
+
+  .grow {
+    text-align: center;
+    height: 50vh;
+
+    h2 {
+      font-size: 50px;
+    }
+  }
+  .security-cards {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+
+  .pro {
+    flex-direction: column;
+  }
+
+  .footer-links {
+    flex-direction: column;
+
+    .company-last {
+      padding-top: 1em !important;
+    }
+  }
+
+  .media {
+    flex-direction: column;
+
+    .fab {
+      padding: 23px 14px 0 !important;
+    }
+  }
+}
