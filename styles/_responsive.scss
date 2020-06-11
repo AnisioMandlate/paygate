@@ -124,6 +124,12 @@
     }
   }
 
+  .payment-header {
+    h3 {
+      font-size: 27px !important;
+    }
+  }
+
   .payment-cards {
     grid-template-columns: repeat(3, 1fr) !important;
 
